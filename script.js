@@ -66,8 +66,10 @@ function updateDashboardAndJobs() {
 // Set status
 function setStatus(id, status) {
   const job = jobs.find(j => j.id === id);
-  job.status=status
-  updateDashboardAndJobs();
+  if (job) {
+    job.status = status;
+    updateDashboardAndJobs();
+  }
 }
 
 // Delete job

@@ -1,13 +1,13 @@
 // ====== VARIABLES ======
 const jobs = [
-  { id:1, company:"Google", position:"Frontend Developer", salary:"$120,000", description:"Develop scalable user interfaces using React and modern web technologies.", status:"all" },
-  { id:2, company:"Microsoft", position:"Backend Developer", salary:"$115,000", description:"Build secure APIs and scalable backend systems.", status:"all" },
-  { id:3, company:"Amazon", position:"Cloud Engineer", salary:"$130,000", description:"Manage AWS infrastructure and deployment pipelines.", status:"all" },
-  { id:4, company:"Tesla", position:"Software Engineer", salary:"$125,000", description:"Develop internal tools for automation and analytics.", status:"all" },
-  { id:5, company:"Meta", position:"UI/UX Designer", salary:"$90,000", description:"Design intuitive user experiences for web platforms.", status:"all" },
-  { id:6, company:"Netflix", position:"DevOps Engineer", salary:"$140,000", description:"Maintain CI/CD systems and monitoring infrastructure.", status:"all" },
-  { id:7, company:"Apple", position:"iOS Developer", salary:"$135,000", description:"Build high-performance iOS applications.", status:"all" },
-  { id:8, company:"Spotify", position:"Data Analyst", salary:"$100,000", description:"Analyze streaming data to improve user engagement.", status:"all" }
+  { id:1, company:"Google", position:"Frontend Developer", salary:"$120,000", description:"Develop scalable user interfaces using React and modern web technologies.", status:"none" },
+  { id:2, company:"Microsoft", position:"Backend Developer", salary:"$115,000", description:"Build secure APIs and scalable backend systems.", status:"none" },
+  { id:3, company:"Amazon", position:"Cloud Engineer", salary:"$130,000", description:"Manage AWS infrastructure and deployment pipelines.", status:"none" },
+  { id:4, company:"Tesla", position:"Software Engineer", salary:"$125,000", description:"Develop internal tools for automation and analytics.", status:"none" },
+  { id:5, company:"Meta", position:"UI/UX Designer", salary:"$90,000", description:"Design intuitive user experiences for web platforms.", status:"none" },
+  { id:6, company:"Netflix", position:"DevOps Engineer", salary:"$140,000", description:"Maintain CI/CD systems and monitoring infrastructure.", status:"none" },
+  { id:7, company:"Apple", position:"iOS Developer", salary:"$135,000", description:"Build high-performance iOS applications.", status:"none" },
+  { id:8, company:"Spotify", position:"Data Analyst", salary:"$100,000", description:"Analyze streaming data to improve user engagement.", status:"none" }
 ];
 
 let currentTab = "all";
@@ -66,7 +66,7 @@ function updateDashboardAndJobs() {
 // Set status
 function setStatus(id, status) {
   const job = jobs.find(j => j.id === id);
-  job.status = job.status === status ? "all" : status;
+  job.status=status
   updateDashboardAndJobs();
 }
 

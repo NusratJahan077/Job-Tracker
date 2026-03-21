@@ -53,4 +53,4 @@ stopPropagation() → Stops event from bubbling up or capturing further
 
 
 ## 🚀 Live Project
-👉 [View Live Site] :
+👉 [View Live Site] : https://nusratjahan077.github.io/Job-Tracker/

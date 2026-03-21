@@ -36,18 +36,21 @@ div.textContent = "Hello World";
 document.body.appendChild(div);
 
 
-3. What is Event Bubbling? And how does it work?
+###3. What is Event Bubbling? And how does it work?
 
 Event triggered on a child element propagates (bubbles) up to parent elements
 
-4. What is Event Delegation in JavaScript? Why is it useful?
+###4. What is Event Delegation in JavaScript? Why is it useful?
 
 Attach an event listener on a parent to handle events on child elements
 
 Useful for dynamic elements and reducing multiple listeners
 
-5. What is the difference between preventDefault() and stopPropagation() methods?
+###5. What is the difference between preventDefault() and stopPropagation() methods?
 
-preventDefault() → Stops default browser action (like link navigation)
 
 stopPropagation() → Stops event from bubbling up or capturing further
+
+
+## 🚀 Live Project
+👉 [View Live Site] :
